@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rock paper scissors</title>
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/web3.min.js"></script>
+    <script src="./js/main.js?v=100"></script>
+
+</head>
+
+<body>
+    
+
+    
+
+    <div class="row align-items-center px-3 topdiv">
+        <div>
+            <b id="palyeName">
+
+            </b>
+
+        </div>
+    </div>
+    <div class="row align-items-center px-3 pb-3 pt-2 topdiv">
+        <div class="col-4">
+            <label for="inputBet" class="form-label">The amount of bet:</label>
+            <input type="text" class="form-control" id="inputBet" value="1">
+        </div>
+        <div class="col-5">
+            <label for="inputState" class="form-label">Second player:</label>
+            <select id="inputState" class="form-select">
+            </select>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+            <button id="btnInviteToPlay"    type="submit" class="btn btn-primary">Start a new game</button>
+        </div>
+    </div>
+    <div class="p-3" style="margin-bottom: 70px;">
+
+        <div class="row mt-3 ">
+            <div class="col-3  column">
+
+                <div class="card align-items-center">
+                    List of games:
+                </div>
+
+
+                <select id='select1' class="form-select " multiple style="height: 100%;">
+
+                </select>
+
+            </div>
+
+            <div class="col-9">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div id="gameTitle" class="col justify-content-center"></div>
+                            <div class="col d-flex justify-content-center">
+                                <img src="images/coin.png" style="width: 25px;height: 25px;">
+                                <span id="gameStake">100</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-3">
+                        <label id="lblGameMessage">Select ....</label>
+                        <div class="btn-group mt-5 mb-5" role="group" aria-label="Basic outlined example"
+                            style="width: 100%;">
+                            <button type="button" class="btn btn-outline-primary p-1 btnAction" data-action="1">
+                                <img src="images/rock.png" class=imageBtnAction>
+                            </button>
+                            <button type="button" class="btn btn-outline-primary p-1 btnAction" data-action="2">
+                                <img src="images/paper.png" class=imageBtnAction>
+                            </button>
+                            <button type="button" class="btn btn-outline-primary p-1 btnAction" data-action="3">
+                                <img src="images/scissors.png" class=imageBtnAction>
+                            </button>
+                            <button type="button" class="btn btn-outline-primary p-1 btnAction" data-action="4">
+                                <img src="images/spock.png" class=imageBtnAction>
+                            </button>
+                            <button type="button" class="btn btn-outline-primary p-1 btnAction" data-action="5">
+                                <img src="images/lizard.png" class=imageBtnAction>
+                            </button>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="row d-flex justify-content-center p-3">
+            2021 Copyright: Nasrin Mazaheri
+        </div>
+    </footer>
+
+    <div class="modal fade" id="getNameDlg" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Enter Your Name</h5>
+                    <button id='getNameDlgBtnClose' type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <label for="inputName" class="col-2 col-form-label">Name</label>
+                        <div class="col-10">
+                            <input class="form-control" id="inputName">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button id='getNameDlgBtnOk' type="button" class="btn btn-primary "
+                        style="width: 100px;">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

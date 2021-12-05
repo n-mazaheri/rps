@@ -1,0 +1,28 @@
+
+body{
+    background-image: url('../images/tile.png');
+    background-repeat: repeat;
+    background-size: 100px 100px;   
+}
+.imageBtnAction{
+    width: 100%;
+   max-width: 75px; 
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#3F66AF;
+    color: white;
+    text-align: center;
+  }
+
+  .topdiv{
+    background-color: #e3f2fd;
+  }
+
+  .selectoption{
+      color: blue;
+  }
